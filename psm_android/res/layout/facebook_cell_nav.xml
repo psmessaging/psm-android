@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp" >
+
+        <ImageView
+            android:id="@+id/fb_cell_nav_uicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/facebookuser" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/fb_cell_nav_uname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="#AAAAFF"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/fb_cell_nav_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#00000000"
+                    android:src="@drawable/close" android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/fb_cell_nav_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="TextView"
+                android:textColor="@color/fs_color_light" android:autoLink="web" android:padding="5dp"/>
+
+            <LinearLayout
+                android:id="@+id/fb_cell_nav_extendedlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <ImageView
+                    android:id="@+id/fb_cell_nav_extendpic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/facebookuser" />
+
+                <LinearLayout
+                    android:id="@+id/fb_cell_nav_extendedtext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/fb_cell_nav_linkcaption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" android:textColor="@color/fs_color_light" android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/fb_cell_nav_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" android:textColor="@color/fs_color_light" android:textSize="12dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/fb_cell_nav_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:text="TextView"
+                    android:textColor="@color/fs_color_light" android:textSize="12dp"/>
+
+                <ImageView
+                    android:id="@+id/fb_cell_nav_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher" android:maxHeight="12dp" android:maxWidth="12dp" android:scaleType="centerCrop" android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fb_cell_nav_likecomment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="3dp"
+                android:background="#777777">
+
+                <Button
+                    android:id="@+id/fb_cell_nav_btnlike"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="#777777"
+                    android:padding="5dp"
+                    android:text="Like"
+                    android:textColor="#AA0000FF"
+                    android:textColorHighlight="#AA00FF00"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/fb_cell_nav_btncomment"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="#777777"
+                    android:padding="5dp"
+                    android:text="Comment"
+                    android:textColor="#AA0000FF"
+                    android:textColorHighlight="#AA00FF00"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/fb_cell_nav_iconcm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_comment" />
+
+                    <TextView
+                        android:id="@+id/fb_cell_nav_comments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/fb_cell_nav_iconlk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_like" />
+
+                    <TextView
+                        android:id="@+id/fb_cell_nav_likes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="0"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

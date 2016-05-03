@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:id="@+id/sms_mnu_allmsg"
+	android:icon="@drawable/chaticon"
+	android:title="All messages" />
+    
+    <item android:id="@+id/sms_mnu_compose"
+	android:icon="@android:drawable/ic_dialog_email"
+	android:title="Compose" />
+    
+    <item android:id="@+id/sms_mnu_schedule"
+	android:icon="@drawable/stopwatch_b"
+	android:title="Schedule Message" />
+    
+    <item android:id="@+id/sms_mnu_call"
+	android:icon="@android:drawable/ic_menu_call"
+	android:title="Call" />
+    
+</menu>

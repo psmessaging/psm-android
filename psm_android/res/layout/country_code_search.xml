@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnbg"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Choose Your Country Code" />
+
+    <EditText
+        android:id="@+id/cc_filter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:ems="10" android:hint="Type Country">
+
+        <requestFocus />
+    </EditText>
+
+    <ListView
+        android:id="@+id/cc_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1" >
+
+    </ListView>
+
+</LinearLayout>

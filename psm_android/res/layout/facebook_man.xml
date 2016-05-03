@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.psm.android.AButton
+            android:id="@+id/fb_man_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gray_rnd"
+            android:text="Status" />
+
+        <com.psm.android.AButton
+            android:id="@+id/fb_man_inbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Inbox" android:background="@drawable/bg_gray_rnd"/>
+
+        <com.psm.android.AButton
+            android:id="@+id/fb_man_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Photo" android:visibility="gone"/>
+
+        <com.psm.android.AButton
+            android:id="@+id/fb_man_news"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gray_rnd"
+            android:text="News" />
+
+        <com.psm.android.AButton
+            android:id="@+id/fb_man_checkin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gray_rnd"
+            android:text="Check In" />
+
+    </LinearLayout>
+
+    <ViewAnimator
+        android:id="@+id/fb_main_animator"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+    </ViewAnimator>
+
+</LinearLayout>

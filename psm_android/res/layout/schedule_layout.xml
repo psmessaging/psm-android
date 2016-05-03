@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnbg"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Scheduled Messages"
+            android:textColor="@color/fs_color_light" />
+
+        <com.psm.android.AButton
+            android:id="@+id/sl_layout_create"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_gray_rnd"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="New Msg" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/sl_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    </ListView>
+
+</LinearLayout>

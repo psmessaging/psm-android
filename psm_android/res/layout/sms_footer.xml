@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical" android:background="#FFFFFF">
+
+        <ImageButton
+            android:id="@+id/sms_conv_nsecure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#AAAAAA"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_partial_secure" />
+
+        <ImageButton
+            android:id="@+id/sms_conv_secure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_secure" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1" >
+
+        <EditText
+            android:id="@+id/sms_conv_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Add text"
+            android:inputType="textMultiLine"
+            android:maxLength="160"
+            android:minLines="5" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/sms_conv_text_secure"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#333333"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Add stealth text"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+            android:minLines="5"
+            android:textColor="#FFFF00"
+            android:textColorHint="#CCCC00" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/sms_conv_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="0 / 160"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/sms_conv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:enabled="false"
+            android:text="Send" />
+
+    </LinearLayout>
+
+</LinearLayout>

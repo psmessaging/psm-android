@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World!</string>
+    <string name="app_name">psm</string>
+    <string name="fname">First Name:</string>
+    <string name="prov_phone">Providing Phone Number Enhances Sms Features.</string>
+    <string name="fbass">Username will be associated with your facebook account.</string>
+    <color name="fs_colorblue">#3333FF</color>
+    <color name="fs_colorgray">#333333</color>
+    <color name="fs_color_light">#FFFFFF</color>
+    <color name="fs_color_transparent">#00FFFFFF</color>
+    <color name="sms_text_color">#FFFFFF</color>
+    <color name="sms_footer_color">#AAFFFFFF</color>
+	<string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+	<string name="pull_to_refresh_release_label">Release to refresh...</string>
+	<string name="pull_to_refresh_refreshing_label">Loading...</string> 
+	<string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+	<color name="stealth_color">#FFFF00</color>
+	<string name="no_location">No Location Information Available</string>
+</resources>

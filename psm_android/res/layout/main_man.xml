@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/main_main_lin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="horizontal" >
+
+        <com.adwhirl.AdWhirlLayout
+            android:id="@+id/adwhirl_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1" >
+
+        </com.adwhirl.AdWhirlLayout>
+
+        <ImageButton
+            android:id="@+id/main_man_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/btnbg"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:src="@drawable/settings_med" />
+
+        <Button
+            android:id="@+id/main_man_btnpopup"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/btnbg"
+            android:text="|||"
+            android:textColor="#FFFF00"
+            android:textStyle="bold" android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_man_rel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:visibility="gone">
+
+        <Button
+            android:id="@+id/main_man_btnsidemenu"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="|||" android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/main_main_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:visibility="gone">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_man_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ViewAnimator
+            android:id="@+id/main_man_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF" >
+        </ViewAnimator>
+
+        <ViewAnimator
+            android:id="@+id/main_man_animator"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#000000" >
+        </ViewAnimator>
+
+    </RelativeLayout>
+
+</LinearLayout>

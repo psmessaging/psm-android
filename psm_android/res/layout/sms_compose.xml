@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:isScrollContainer="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnbg"
+        android:padding="8dp" >
+
+        <AutoCompleteTextView
+            android:id="@+id/sms_comp_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" android:hint="To" android:inputType="number|phone">
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <Button
+            android:id="@+id/sms_comp_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="........" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/sms_comp_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Add text"
+            android:inputType="textMultiLine"
+            android:maxLength="160"
+            android:minLines="5" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/sms_comp_txtlength"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="0 / 160"
+                android:textColor="#000000"
+                android:textStyle="bold" android:gravity="center_vertical|center_horizontal"/>
+
+            <Button
+                android:id="@+id/sms_comp_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:enabled="false"
+                android:text="Send" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/sms_comp_stealthlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/sms_comp_txtstealth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="#333333"
+                android:ems="10"
+                android:gravity="top|left"
+                android:hint="Add Stealth text"
+                android:inputType="textMultiLine"
+                android:maxLength="200"
+                android:minLines="5"
+                android:textColor="#FFFF00"
+                android:textColorHint="#AAAA00" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" android:background="#333333">
+
+                <TextView
+                    android:id="@+id/sms_comp_txtslength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="0 / 200"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

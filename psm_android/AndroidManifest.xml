@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.psm.android"
+    android:versionCode="1"
+    android:versionName="1.0" xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="com.psm.android.share">
+
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES"/>
+    <supports-screens android:resizeable="true" android:normalScreens="true" android:largeScreens="true" android:anyDensity="true" android:smallScreens="true"/>
+
+    <application
+        android:icon="@drawable/icon_t"
+        android:label="@string/app_name" android:allowBackup="true">
+        <uses-library android:name="com.google.android.maps" />
+        <activity android:name=".AcctList"></activity>
+        <activity android:name=".MainA" android:screenOrientation="portrait"
+            android:theme="@style/generalnotitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:value="24e3832be4ef403fac4532a1d3520655"
+        android:name="ADWHIRL_KEY"/>
+        </activity>
+        <activity android:name=".AcctCreate"></activity>
+        <activity android:name=".LoginScreen"></activity>
+        <activity android:name=".fs.FoursquareLogin"></activity>
+        <activity android:name=".fs.FoursquareExplore"></activity>
+        <activity android:name=".fs.FoursquareMan"></activity>
+        <activity android:name=".fs.FoursquareFriends"></activity>
+        <activity android:name=".fs.FoursquareVenue"></activity>
+        <activity android:name=".fs.FoursquareMap"></activity>
+        <activity android:name=".fs.FoursquareCheckin"></activity>
+        <activity android:name=".fs.FoursquareSearch"></activity>
+        <activity android:name=".fs.FoursquareMe"></activity>
+        <activity android:name=".sms.SmsInbox">
+            <meta-data android:value="24e3832be4ef403fac4532a1d3520655"
+        		android:name="ADWHIRL_KEY"/>
+        </activity>
+        <activity android:name=".sms.SmsComposepose"></activity>
+        <activity android:name=".sms.SmsConversation" android:launchMode="singleTop"></activity>
+        <receiver android:exported="true" android:name=".sms.SmsListener">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver><activity android:name=".fb.FacebookMan"></activity>
+        
+        
+        
+        <activity android:name=".fb.FacebookStatus"></activity>
+        <activity android:name=".fb.FacebookSearchSearch"></activity>
+        <activity android:name=".fb.FacebookCheckin"></activity>
+        <activity android:name=".fb.FacebookNavNav">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="com.psm.android" android:host="nav"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".fb.FacebookFriends"></activity>
+        <activity android:name=".fb.FacebookAlbums"></activity>
+        <activity android:name=".fb.FacebookViewAlbum"></activity>
+        <activity android:name=".fb.FacebookViewPhoto"></activity>
+        <activity android:name=".fb.FacebookInbox"></activity>
+        <activity android:name=".fb.FacebookComments"></activity>
+        <activity android:name=".SideMenu"></activity>
+        <activity android:name=".MainMan">
+            <meta-data android:value="24e3832be4ef403fac4532a1d3520655"
+        		android:name="ADWHIRL_KEY"/>
+        </activity>
+        
+        <activity android:name=".LoginActivity"
+            android:theme="@style/generalnotitle">
+            <meta-data android:value="24e3832be4ef403fac4532a1d3520655"
+        	android:name="ADWHIRL_KEY"/>
+        </activity>
+        <activity android:name=".CountryCodeActivity"></activity>
+        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".GroupChooser"></activity><activity android:name=".GroupCreate" android:launchMode="singleTop"></activity>
+        <activity android:name=".GroupListActivity"></activity><activity-alias android:name="SmsInboxAlias" android:label="SMS Inbox" android:targetActivity=".sms.SmsInbox" android:icon="@drawable/facebookuser" android:enabled="false">
+	        <intent-filter>
+	        	<action android:name="android.intent.action.CREATE_SHORTCUT" />
+	        	<category android:name="android.intent.category.DEFAULT">
+        		</category>
+    		</intent-filter>    
+        </activity-alias>
+        <activity android:name=".TestPullDown"></activity>
+        
+        
+        <activity android:name=".ChatMan"></activity>
+        <activity android:name=".ChatCreate"></activity>
+        <activity android:name=".ChatRoom"></activity>
+        <service android:name="com.psm.android.ScheduleMsgService"></service>
+        <activity android:name="com.psm.android.ScheduleList"></activity>
+    </application>
+
+</manifest>

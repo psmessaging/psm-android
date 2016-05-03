@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="@color/fs_colorgray">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fs_colorblue" >
+
+                <LinearLayout
+                    android:id="@+id/fsv_lin_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/fsv_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:maxHeight="64dip"
+                        android:maxWidth="64dip"
+                        android:minHeight="64dip"
+                        android:minWidth="64dip" />
+
+                    <LinearLayout
+                        android:id="@+id/fsv_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/fsv_title"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:textColor="@color/fs_color_light"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/fsv_address"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/fs_color_light" />
+
+                            <TextView
+                                android:id="@+id/fsv_city"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/fs_color_light" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:text=">"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/fsv_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@color/fs_colorblue"
+                android:orientation="vertical" >
+
+                <com.psm.android.AButton
+                    android:id="@+id/fsv_btncheckin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Check-In Here" android:background="@drawable/bg_gray_rnd"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fs_colorblue"
+                android:clickable="true" android:visibility="gone">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Tip" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="+ Photo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fsv_herenow_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/fsv_herenow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold" android:padding="5dp" android:background="#888888" android:textColor="#FFFFFF"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/fsv_hn_1"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="5dp"
+                            android:scaleType="fitXY"/>
+
+                        <ImageView
+                            android:id="@+id/fsv_hn_2"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="5dp"
+                            android:scaleType="fitXY"/>
+
+                        <ImageView
+                            android:id="@+id/fsv_hn_3"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="5dp"
+                            android:scaleType="fitXY"/>
+
+                        <ImageView
+                            android:id="@+id/fsv_hn_4"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="5dp"
+                            android:scaleType="fitXY"/>
+
+                        <ImageView
+                            android:id="@+id/fsv_hn_5"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="5dp"
+                            android:scaleType="fitXY"/>
+
+                        <ImageView
+                            android:id="@+id/fsv_hn_6"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="5dp"
+                            android:scaleType="fitXY"/>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <GridView
+                    android:id="@+id/fsv_herenow_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numColumns="5" android:isScrollContainer="false" android:horizontalSpacing="15dp" android:verticalSpacing="10dp" android:visibility="gone">
+                </GridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fsv_tip_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/fsv_tips"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold" android:padding="5dp" android:background="#888888" android:textColor="#FFFFFF"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp" >
+
+                        <ImageView
+                            android:id="@+id/fsv_tipicon"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center_vertical"
+                            android:scaleType="fitXY"/>
+
+                        <TextView
+                            android:id="@+id/fsv_tiptext"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fsv_mayor_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mayor" android:padding="5dp" android:textStyle="bold" android:background="#888888" android:textColor="#FFFFFF"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+
+                    <ImageView
+                        android:id="@+id/fsv_mayor_icon"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/fsv_mayor_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ExpandableListView
+                android:id="@+id/fsv_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:cacheColorHint="#333333"
+                android:listSelector="@color/fs_color_transparent"
+                android:visibility="gone" >
+            </ExpandableListView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

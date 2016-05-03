@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnbg"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Facebook Friends"
+            android:textColor="#FFFFFF" />
+
+        <com.psm.android.AButton
+            android:id="@+id/fb_friends_i3group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_gray_rnd"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="i3 Group" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/fb_friend_editsearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" android:hint="Friend's Name">
+
+        <requestFocus />
+    </EditText>
+
+    <ListView
+        android:id="@+id/fb_friends_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    </ListView>
+
+</LinearLayout>
